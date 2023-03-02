@@ -274,3 +274,6 @@ sidecar:
     pullPolicy: IfNotPresent
   # -- The extra volume mounts for the sidecar
   volumeMounts: []
+  
+probs:
+  url: /
