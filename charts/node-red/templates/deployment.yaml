@@ -130,11 +130,11 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: {{ .Values.probes.url | default "/" }}
+              path: {{ .Values.probes.url }}
               port: http
           readinessProbe:
             httpGet:
-              path: {{ .Values.probes.url | default "/" }}
+              path: {{ .Values.probes.url }}
               port: http
           volumeMounts:
             {{- if and .Values.npmrc.enabled }}
